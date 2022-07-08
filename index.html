@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/bookmark.png">
+    <title>BookMarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/RWD.css">
+</head>
+<body>
+    <div class="container  d-flex align-items-center vh-100">
+
+        <div class="bookmark p-3  d-flex flex-column align-items-center">
+            <div class="logo">
+                <img src="img/Logo.png" width="300px" alt="">
+            </div>
+      
+            <div class="inputs w-100" id="form">
+                <label class="my-2 text-warning" for="BookmarkNameInput">Site Name</label>
+                <input type="text" onkeyup="validation2()"  id="BookmarkNameInput" class="form-control">
+    
+                <div class="alert arl1 alert-danger"  id="alertName">
+                    <p>enter valid name website</p>
+                </div>
+    
+    
+                <label class="my-2 text-warning" for="WebsiteUrlInput">Site URL</label>
+                <input type="text" onkeyup="validation1()" id="WebsiteUrlInput" class="form-control">
+    
+                <div class="alert arl2 alert-danger"  id="alerturl">
+                    <p>enter valid url website  "don't write https://"</p>
+                </div>
+    
+    
+    
+                <button class="btn btn-danger w-100 my-2" onclick="addbookmark()">Submit</button>
+    
+            </div>
+            
+
+
+            <div id="showbookmark" class="container    my-3 ">
+
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

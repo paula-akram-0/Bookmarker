@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(34, 34, 34);
+    background-image: url(../img/background.png);
+}
+
+.bookmark{
+    background-color: rgb(34, 34, 34);
+    box-shadow: 5px 4px 13px 0px #fcad2347;
+    border-radius: 15px;
+    margin-left: 50px;
+    width: 100%;
+}
+.arl1
+{
+    display: none;
+}
+.arl2{
+    display: none;
+}
+
+#showbookmark{
+    background-color: rgba(165, 250, 8, 0.144);
+    box-shadow: 5px 4px 13px 0px #06812591;
+    border-radius: 20px;
+    text-align: center;
+}
